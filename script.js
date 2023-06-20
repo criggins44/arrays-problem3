@@ -14,6 +14,12 @@ values of 1, 0, -1 to sort items
 const myArray = [-3,8,7,6,5,-4,3,2,1];
 const secondTest = [11,13,5,2,7,19,21,-5];
 
-let newArray = secondTest.sort(function(a, b){return b-a});
+//let newArray = secondTest.sort(function(a, b){return b-a});
 
-console.log(newArray);
+//console.log(newArray);
+
+myFunction = array => {
+	
+	return (array.sort(function(a, b){b-a}));
+}
+console.log(myFunction(secondTest));
